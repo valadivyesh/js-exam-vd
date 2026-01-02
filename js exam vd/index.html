@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Book with Advanced Search and Filtering</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>RecipeBook</h1>
+  <form id="rec-form">
+
+    <input type="text" id="title" placeholder="Enter Recipe Name" required>
+    <textarea id="ingredients" placeholder="Enter Ingredients Here" required></textarea>
+    <textarea id="instructions" placeholder="Cooking Instructions" required></textarea>
+
+    <select id="cuisine" required>
+      <option value="">Select Cuisine Type</option>
+      <option value="Indian"></option>
+      <option value="Italian"></option>
+      <option value="Chinese"></option>
+      <option value="Mexican"></option>
+      <option value="Other">Other</option>
+    </select>
+
+    <button type="submit" id="addBtn">Add Recipe</button>
+
+  </form>
+
+  <div id="search">
+    <input type="text" id="search" placeholder="Search by title or ingredients">
+    <select id="filterCuisine">
+     <option value="">Select Cuisine Type</option>
+      <option value="Indian">Indian</option>
+      <option value="Italian">Italian</option>
+      <option value="Chinese">Chinese</option>
+      <option value="Mexican">Mexican</option>
+      <option value="Other">Other</option>
+    </select>
+  </div>
+
+  <div id="recipeList"></div>
+</body>
+<script src="script.js"></script>
+</html>
